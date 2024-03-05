@@ -4,9 +4,11 @@ import { Bricolage_Grotesque } from "next/font/google";
 import { TypewriterEffect } from "./components/typewriter-effect";
 import { TextGenerateEffect } from "./components/text-generate-effect";
 import { FloatingNav } from "./components/floating-navbar";
-import { IconLayout2, IconMail, IconUsers, IconArrowRight } from "@tabler/icons-react";
+import { IconLayout2, IconMail, IconUsers, IconArrowRight, IconBolt } from "@tabler/icons-react";
 import { WavyBackground } from "./components/wavy-background";
 import { EvervaultCard, Icon } from "./components/evervault-card";
+import { TracingBeam } from "./components/tracing-beam";
+
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 
@@ -21,6 +23,11 @@ export default function Home() {
       name: "About",
       link: "/about",
       icon: <IconUsers className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Skills",
+      link: "/skills",
+      icon: <IconBolt className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
@@ -63,10 +70,10 @@ export default function Home() {
   );
   return ( <>
 
-  
 <main className={`${bricolageGrotesque.className} w-full items-center flex-col`}>
-
-  <FloatingNav navItems={navItems} />
+  <FloatingNav navItems={navItems} />  
+  <TracingBeam className="">
+  
   <WavyBackground className="max-w-4xl mx-auto">
   <div className="h-[70rem] sm:h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-[80%] sm:w-[70%] pt-20 md:pt-0">
@@ -82,17 +89,20 @@ export default function Home() {
       </div>
     </div>
   </WavyBackground>
-  <div className="flex flex-col items-center text-center w-full justify-center gap-y-[50px] mb-10">
+  <div className="flex flex-col items-center text-center w-full justify-center gap-y-[50px] mb-10" id="about">
+
+    </div>
+  <div className="flex flex-col items-center text-center w-full justify-center gap-y-[50px] mb-10" id="skills">
     <div className="flex flex-col items center sm:w-full justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Skills</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the technologies I've worked with.</p>
       </div>
     <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-4 sm:grid-rows-1 sm:gap-x-4 gap-y-10">
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-white" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-rose-600" />
  
       <EvervaultCard text=".NET" />
  
@@ -105,10 +115,10 @@ export default function Home() {
       </p>
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-white" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-rose-600" />
  
       <EvervaultCard text="XAML" />
  
@@ -121,10 +131,10 @@ export default function Home() {
       </p>
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-white" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-rose-600" />
  
       <EvervaultCard text="Figma" />
  
@@ -137,10 +147,10 @@ export default function Home() {
       </p>
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-white" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-white" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-rose-600" />
  
       <EvervaultCard text="Next.JS" />
  
@@ -154,7 +164,7 @@ export default function Home() {
     </div>    
     </div>
   </div>
-
+  </TracingBeam>
     </main>
   </>
   );
