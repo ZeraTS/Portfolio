@@ -95,7 +95,7 @@ export default function Home() {
   <div className="flex flex-col items-center text-center w-full justify-center gap-y-[50px] mb-10" id="skills">
     <div className="flex flex-col items center sm:w-full justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Skills</h2>
-    <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the technologies I've worked with.</p>
+    <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the technologies I&apos;ve worked with.</p>
       </div>
     <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-4 sm:grid-rows-1 sm:gap-x-4 gap-y-10">
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
@@ -106,13 +106,11 @@ export default function Home() {
  
       <EvervaultCard text=".NET" />
  
-      <h2 className="dark:text-white text-white mt-4 text-sm font-light">
+      <h2 className="dark:text-white text-white mb-10 text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy
         here.
       </h2>
-      <p className="text-sm border font-light dark:border-white/[0.2] border-white/[0.2] rounded-full mt-4 text-white dark:text-white px-2 py-0.5">
-        Watch me hover
-      </p>
+
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
@@ -122,13 +120,11 @@ export default function Home() {
  
       <EvervaultCard text="XAML" />
  
-      <h2 className="dark:text-white text-white mt-4 text-sm font-light">
+      <h2 className="dark:text-white text-white mb-10  text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy
         here.
       </h2>
-      <p className="text-sm border font-light dark:border-white/[0.2] border-white/[0.2] rounded-full mt-4 text-white dark:text-white px-2 py-0.5">
-        Watch me hover
-      </p>
+
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
@@ -138,13 +134,11 @@ export default function Home() {
  
       <EvervaultCard text="Figma" />
  
-      <h2 className="dark:text-white text-white mt-4 text-sm font-light">
+      <h2 className="dark:text-white text-white mb-10  text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy
         here.
       </h2>
-      <p className="text-sm border font-light dark:border-white/[0.2] border-white/[0.2] rounded-full mt-4 text-white dark:text-white px-2 py-0.5">
-        Watch me hover
-      </p>
+
     </div>    
     <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
@@ -154,13 +148,11 @@ export default function Home() {
  
       <EvervaultCard text="Next.JS" />
  
-      <h2 className="dark:text-white text-white mt-4 text-sm font-light">
+      <h2 className="dark:text-white text-white mb-10 text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy
         here.
       </h2>
-      <p className="text-sm border font-light dark:border-white/[0.2] border-white/[0.2] rounded-full mt-4 text-white dark:text-white px-2 py-0.5">
-        Watch me hover
-      </p>
+
     </div>    
     </div>
   </div>
