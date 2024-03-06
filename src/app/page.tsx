@@ -244,7 +244,7 @@ export default function Home() {
     <h2 className="text-5xl dark:text-white font-bold text-white">Projects</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the projects I've worked on.</p>
       </div>
-    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-4">
+    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-4 sm:scale-125">
     <PinContainer
         title="https://fluxteam.xyz/"
         href="https://fluxteam.xyz/"
