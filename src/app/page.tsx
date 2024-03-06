@@ -178,8 +178,8 @@ export default function Home() {
     <h2 className="text-5xl dark:text-white font-bold text-white">Skills</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the technologies I&apos;ve worked with.</p>
       </div>
-    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-4 sm:grid-rows-1 sm:gap-x-4 gap-y-10">
-    <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-4 sm:grid-rows-1 sm:gap-x-4 gap-y-10 scale-80 sm:scale-100">
+    <div className="border border-white/[0.2] dark:border-white/[0.2] bg-black flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
@@ -193,7 +193,7 @@ export default function Home() {
       </h2>
 
     </div>    
-    <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+    <div className="border border-white/[0.2] dark:border-white/[0.2] bg-black flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
@@ -207,7 +207,7 @@ export default function Home() {
       </h2>
 
     </div>    
-    <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+    <div className="border border-white/[0.2] dark:border-white/[0.2] bg-black flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
@@ -221,7 +221,7 @@ export default function Home() {
       </h2>
 
     </div>    
-    <div className="border border-white/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
+    <div className="border border-white/[0.2] dark:border-white/[0.2] bg-black flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
@@ -296,7 +296,7 @@ export default function Home() {
     <h2 className="text-5xl dark:text-white font-bold text-white">Contact me</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2 sm:w-[70%] scale-90">If you want to get in touch</p>
       </div>
-      <HoverEffect items={projects} />
+      <HoverEffect className="scale-[80%] sm:scale-[100%]" items={projects} />
     </div>
 
     <div className='flex flex-row items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
