@@ -32,14 +32,14 @@ export const TracingBeam = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, .9], [50, svgHeight]),
     {
       stiffness: 500,
       damping: 90,
     }
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 500]),
+    useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
       stiffness: 500,
       damping: 90,
@@ -49,9 +49,9 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("absolute w-full max-w-mx-auto h-full z-100", className)}
+      className={cn("relative w-auto sm:max-w-[2000]  mx-auto h-full", className)}
     >
-      <div className="absolute z-100 top-3">
+      <div className="absolute  md top-3">
         <motion.div
           transition={{
             duration: 0.2,
@@ -114,10 +114,10 @@ export const TracingBeam = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#731033"></stop>
-              <stop offset="0.325" stopColor="#731033"></stop>
-              <stop offset="1" stopColor="#4E1835" stopOpacity="0"></stop>
+              <stop stopColor="#731033" stopOpacity="0"></stop>
+              <stop stopColor="#4E1835"></stop>
+              <stop offset="0.325" stopColor="#4E1835"></stop>
+              <stop offset="1" stopColor="#731033" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>

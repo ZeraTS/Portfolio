@@ -144,10 +144,11 @@ export default function Home() {
     },
   ];
   return ( <>
-  <TracingBeam className="">
 <main className={`${bricolageGrotesque.className} w-full items-center flex-col`}>
   <FloatingNav navItems={navItems} />  
-  
+  <TracingBeam>
+  <div className="flex flex-col w-full h-auto">
+
   <WavyBackground className="max-w-4xl mx-auto">
   <div className="h-[70rem] sm:h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-[80%] sm:w-[70%] pt-20 md:pt-0">
@@ -296,7 +297,7 @@ export default function Home() {
     <h2 className="text-5xl dark:text-white font-bold text-white">Contact me</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2 sm:w-[70%] scale-90">If you want to get in touch</p>
       </div>
-      <HoverEffect className="scale-[80%] sm:scale-[100%]" items={projects} />
+      <HoverEffect className="scale-[80%] sm:scale-[80%]" items={projects} />
     </div>
 
     <div className='flex flex-row items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
@@ -309,8 +310,10 @@ export default function Home() {
         </div>
       </div>
     </div>
+  </div>
+  </TracingBeam>
+
     </main>
-    </TracingBeam>
 
   </>
   );
