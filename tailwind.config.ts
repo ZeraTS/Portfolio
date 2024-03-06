@@ -16,6 +16,10 @@ module.exports = {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        'opacity-scale': {
+          '0%': { opacity: '0', transform: 'scale(0)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        }
       },
       keyframes: {
         spotlight: {
