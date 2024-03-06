@@ -15,6 +15,7 @@ import { Tabs } from "./components/tabs";
 import { Button } from "./components/moving-border";
 import Head from 'next/head'
 import { title } from "process";
+import exp from "constants";
 
 
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
@@ -128,6 +129,7 @@ const tabs = [
 export default function Home() {
 
   
+  
   const navItems = [
     {
       name: "Home",
@@ -215,13 +217,15 @@ export default function Home() {
       title: "Developer",
     },
   ];
+  
   return ( <>
+
 <main className={`${bricolageGrotesque.className} w-full items-center min-h-screen flex-col`}>
   <FloatingNav navItems={navItems} />  
   <TracingBeam className="min-h-screen overflow-y-hidden">
-  <div className="flex flex-col w-full h-auto">
+  <div className="flex flex-col w-full">
 
-  <WavyBackground className="max-w-4xl mx-auto" id="home">
+  <WavyBackground className="max-w-4xl h-auto mx-auto" id="home">
   <div className="h-[70rem] sm:h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-[80%] sm:w-[70%] pt-20 md:pt-0">
         <div className="px-3 py-2 text-rose-600 justify-center ml-3 sm:ml-[180px] mb-5 text-center w-[90%] sm:w-[40%] items-center border-neutral-800 rounded-full shadow-lg opacity">
@@ -274,13 +278,14 @@ export default function Home() {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-rose-600" />
  
-      <EvervaultCard text="XAML" />
+      <EvervaultCard text="Framer" />
  
       <h2 className="dark:text-white text-white mb-10 px-5 text-sm font-light">
-        XAML is a declarative XML-based language developed by Microsoft. It is used to initialize structured values and objects.
+        Framer is a prototyping tool for teams to design, prototype, and collaborate all in one place.
       </h2>
 
     </div>    
+    
     <div className="border border-white/[0.2] dark:border-white/[0.2] bg-black flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-rose-600" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-rose-600" />
