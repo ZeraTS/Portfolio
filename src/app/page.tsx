@@ -145,9 +145,9 @@ export default function Home() {
     },
   ];
   return ( <>
-<main className={`${bricolageGrotesque.className} w-full items-center flex-col`}>
+<main className={`${bricolageGrotesque.className} w-full items-center min-h-screen flex-col`}>
   <FloatingNav navItems={navItems} />  
-  <TracingBeam>
+  <TracingBeam className="min-h-screen overflow-y-hidden">
   <div className="flex flex-col w-full h-auto">
 
   <WavyBackground className="max-w-4xl mx-auto">
