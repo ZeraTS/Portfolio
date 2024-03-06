@@ -153,7 +153,7 @@ export default function Home() {
   <WavyBackground className="max-w-4xl mx-auto">
   <div className="h-[70rem] sm:h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-[80%] sm:w-[70%] pt-20 md:pt-0">
-        <div className="px-3 py-2 text-rose-600 justify-center ml-10 sm:ml-[180px] mb-5 text-center w-[70%] sm:w-[40%] items-center border-neutral-800 rounded-full shadow-lg opacity">
+        <div className="px-3 py-2 text-rose-600 justify-center ml-3 sm:ml-[180px] mb-5 text-center w-[90%] sm:w-[40%] items-center border-neutral-800 rounded-full shadow-lg opacity">
           <span> Thank God for Aceternity </span>
         </div>
       <TypewriterEffect  words={heading} />
