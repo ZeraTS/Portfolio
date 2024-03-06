@@ -145,10 +145,10 @@ export default function Home() {
     },
   ];
   return ( <>
-<main className={`${bricolageGrotesque.className} w-full items-center flex-col overflow-x-hidden `}>
+<main className={`${bricolageGrotesque.className} w-full items-center flex-col`}>
   <FloatingNav navItems={navItems} />  
   <TracingBeam>
-  <div className="flex flex-col w-[100%] h-auto">
+  <div className="flex flex-col w-full h-auto">
 
   <WavyBackground className="max-w-4xl mx-auto">
   <div className="h-[70rem] sm:h-[60rem] w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">

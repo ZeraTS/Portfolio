@@ -53,3 +53,7 @@ body {
   animation: opacity-scale-animation 1.2s ease-in-out;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
