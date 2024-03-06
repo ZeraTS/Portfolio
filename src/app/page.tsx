@@ -304,7 +304,7 @@ export default function Home() {
       <HoverEffect className="scale-[80%] sm:scale-[80%]" items={projects} />
     </div>
 
-    <div className='flex flex-row items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
+    <div className='flex flex-row overflow-x-hidden items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
       <div className='flex flex-row items-center justify-between'>
         <div className='flex flex-row items-center justify-start gap-x-4'>
           <a className='flex flex-row items-center w-auto h-auto gap-x-2' href='https://instagram.com'>
