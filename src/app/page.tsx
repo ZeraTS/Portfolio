@@ -1,11 +1,10 @@
-import '@radix-ui/themes/styles.css';
 import { Bricolage_Grotesque } from "next/font/google";
 import { TypewriterEffect } from "./components/typewriter-effect";
 import { TextGenerateEffect } from "./components/text-generate-effect";
 import { FloatingNav } from "./components/floating-navbar";
-import { IconLayout2, IconMail, IconUsers, IconArrowRight, IconBolt, IconBrandInstagram, IconCopyright } from "@tabler/icons-react";
-import { WavyBackground } from "./components/wavy-background";
 import { EvervaultCard, Icon } from "./components/evervault-card";
+import { IconLayout2, IconMail, IconUsers, IconArrowRight, IconBolt, IconCopyright } from "@tabler/icons-react";
+import { WavyBackground } from "./components/wavy-background";
 import { TracingBeam } from "./components/tracing-beam";
 import { InfiniteMovingCards } from "./components/infinite-moving-cards";
 import { PinContainer } from "./components/3d-pin";
@@ -14,18 +13,18 @@ import { HoverEffect } from "./components/card-hover-effects";
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 
 
-export const projects = [
+ const projects = [
   {
     title: "Instagram",
     description:
       "A photo and video-sharing social networking service owned by Meta Platforms.",
-    link: "https://stripe.com",
+    link: "https://instagram.com",
   },
   {
     title: "Discord",
     description:
       "A proprietary freeware VoIP application and digital distribution platform designed for creating communities.",
-    link: "https://netflix.com",
+    link: "https://discord.com",
   },
   {
     title: "GitHub",
@@ -60,7 +59,7 @@ export default function Home() {
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "/home",
       icon: <IconLayout2 className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
@@ -167,7 +166,7 @@ export default function Home() {
   <div className="flex flex-col items-center w-full justify-center gap-y-[50px] mb-10" id="about">
   <div className="flex flex-col items center text-center  sm:w-full justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Testimonials</h2>
-    <p className="text-xl dark:text-white text-neutral-500 mt-2">Reputable commentary coming from people I've worked with. </p>
+    <p className="text-xl dark:text-white text-neutral-500 mt-2">Reputable commentary coming from people Ive worked with. </p>
    </div>
       <div className="flex flex-col items-center antialiased overflow-hidden w-full justify-center mb-[300px]" id="testimonials">
     <InfiniteMovingCards items={testimonials} direction="right" speed="normal"/>
@@ -242,7 +241,7 @@ export default function Home() {
   <div className="flex flex-col items-center w-full justify-center gap-y-[30px] mb-[50px] sm:mb-[300px]" id="projects">
     <div className="flex flex-col items-center text-center sm:w-full justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Projects</h2>
-    <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the projects I've worked on.</p>
+    <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the projects Ive worked on.</p>
       </div>
     <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-4 sm:scale-125">
     <PinContainer
@@ -295,9 +294,9 @@ export default function Home() {
     <div className="flex flex-col items-center w-full justify-center gap-y-[0px] sm:gap-y-[30] mb-[50px] sm:mb-[300px]" id="contact">
     <div className="flex flex-col items-center text-center sm:w-[70%] justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Contact me</h2>
-    <p className="text-xl dark:text-white text-neutral-500 mt-2">If you want to get in touch</p>
+    <p className="text-xl dark:text-white text-neutral-500 mt-2 sm:w-[70%] scale-90">If you want to get in touch</p>
       </div>
-      <HoverEffect items={projects} className="sm:w-[70%] scale-90" />
+      <HoverEffect items={projects} />
     </div>
 
     <div className='flex flex-row items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>

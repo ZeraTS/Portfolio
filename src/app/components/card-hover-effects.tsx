@@ -1,9 +1,8 @@
 "use client";
 import { cn } from "@/../utils/cn";
-import { IconBrandDiscord, IconBrandInstagram, IconBrandMeta, IconBrandTelegram, IconBrandWhatsapp } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { Children, useState } from "react";
+import { useState } from "react";
 
 export const HoverEffect = ({
   items,
@@ -60,13 +59,6 @@ export const HoverEffect = ({
   );
 };
 
-const iconComponents = {
-  IconBrandInstagram,
-  IconBrandMeta,
-  IconBrandDiscord,
-  IconBrandTelegram,
-  IconBrandWhatsapp
-};
 
 export const Card = ({
   className,
