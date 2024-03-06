@@ -244,7 +244,7 @@ export default function Home() {
     <h2 className="text-5xl dark:text-white font-bold text-white">Projects</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2">Here are some of the projects I've worked on.</p>
       </div>
-    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-4 sm:scale-125">
+    <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-4">
     <PinContainer
         title="https://fluxteam.xyz/"
         href="https://fluxteam.xyz/"
@@ -292,7 +292,7 @@ export default function Home() {
       </PinContainer>
       </div>
     </div>
-    <div className="flex flex-col items-center w-full justify-center gap-y-[0px] sm:gap-y-[30px] mb-[50px] sm:mb-[300px]" id="contact">
+    <div className="flex flex-col items-center w-full justify-center gap-y-[0px] sm:gap-y-[30] mb-[50px] sm:mb-[300px]" id="contact">
     <div className="flex flex-col items-center text-center sm:w-[70%] justify-center w-[70%]">
     <h2 className="text-5xl dark:text-white font-bold text-white">Contact me</h2>
     <p className="text-xl dark:text-white text-neutral-500 mt-2">If you want to get in touch</p>
