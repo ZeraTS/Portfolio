@@ -7,16 +7,11 @@ import { IconLayout2, IconMail, IconUsers, IconArrowRight, IconBolt, IconCopyrig
 import { WavyBackground } from "./components/wavy-background";
 import { TracingBeam } from "./components/tracing-beam";
 import { InfiniteMovingCards } from "./components/infinite-moving-cards";
-import { PinContainer } from "./components/3d-pin";
 import { HoverEffect } from "./components/card-hover-effects";
 import "./globals.css";
-import { StickyScroll } from "./components/sticky-scroll-reveal";
 import { Tabs } from "./components/tabs";
 import { Button } from "./components/moving-border";
-import Head from 'next/head'
-import { title } from "process";
-import exp from "constants";
-
+import NowPlaying from "./components/spotify";
 
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 const tabs = [
@@ -333,13 +328,16 @@ export default function Home() {
     </div>
 
     <div className='flex flex-row overflow-x-hidden items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
-      <div className='flex flex-row items-center justify-between'>
+      <div className='flex flex-row items-center justify-between sm:w-[80%]'>
         <div className='flex flex-row items-center justify-start gap-x-4'>
           <a className='flex flex-row items-center w-auto h-auto gap-x-2' href='https://instagram.com'>
             <IconCopyright className='h-6 w-6 text-white text-opacity-50 dark:text-white' />
             <span className='text-white text-opacity-50 font-normal '>Copyright 2024, Paulsoftworks llc</span>
             </a>
         </div>
+        <div className="flex flex-row items-center py-3 px-3  justify-end gap-x-4">
+          <NowPlaying/>
+          </div>
       </div>
     </div>
   </div>
