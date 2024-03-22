@@ -26,10 +26,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    cursor: pointer;
     scroll-behavior: smooth;
-    cursor: url('https://cdn.discordapp.com/attachments/1006006861234962552/1214848677127004190/image.png?ex=65fa9aff&is=65e825ff&hm=f073a6e6486c6e314f93525c36d96e8819926a014cb98339c8bca4321d7c2269&'), progress;
-    cursor: url('https://cdn.discordapp.com/attachments/1006006861234962552/1214847801264177162/image.png?ex=65fa9a2e&is=65e8252e&hm=7f0d09484f6656e2b7b28e55f9a3ec5e42bbddbeae16b893891ee9c19c9a7952&'), pointer;
+    cursor: url('https://cdn.discordapp.com/attachments/1006006861234962552/1214847801264177162/image.png?ex=65fa9a2e&is=65e8252e&hm=7f0d09484f6656e2b7b28e55f9a3ec5e42bbddbeae16b893891ee9c19c9a7952&'), auto;
 }
 
 @layer utilities {
