@@ -12,6 +12,11 @@ import "./globals.css";
 import { Tabs } from "./components/tabs";
 import { Button } from "./components/moving-border";
 
+
+fetch("https://api.lanyard.rest/v1/users/1005349824427733025")
+.then((res) => res.json())
+.then((data) => console.log(data));
+
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 const tabs = [
   {
