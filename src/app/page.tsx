@@ -11,11 +11,9 @@ import { HoverEffect } from "./components/card-hover-effects";
 import "./globals.css";
 import { Tabs } from "./components/tabs";
 import { Button } from "./components/moving-border";
+import { Lanyard } from "./components/discord-info";
 
 
-fetch("https://api.lanyard.rest/v1/users/1005349824427733025")
-.then((res) => res.json())
-.then((data) => console.log(data));
 
 const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
 const tabs = [
@@ -331,17 +329,18 @@ export default function Home() {
       <HoverEffect className="scale-[80%] sm:scale-[80%]" items={socials} />
     </div>
 
-    <div className='flex flex-row overflow-x-hidden items-center h-[100px] justify-center gap-x-4 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
+    <div className='flex sm:flex-row flex-col overflow-x-hidden items-center h-[130px] sm:h-[90px] justify-center gap-x-1 border border-neutral-800 border-t-1 border-l-0 border-r-0 border-b-0' id='footer'>
           <a className='flex flex-row items-center w-auto h-auto gap-x-2' href='https://instagram.com'>
             <IconCopyright className='h-6 w-6 text-white text-opacity-50 dark:text-white' />
             <span className='text-white text-opacity-50 font-normal '>Copyright 2024, Paulsoftworks llc</span>
             </a>
-        <div className="flex flex-row items-center py-3 px-3  justify-end gap-x-4">
+            <div className="flex flex-row items-center py-3 px-3  justify-end gap-x-4">
+        <Lanyard/>
           </div>
     </div>
+
   </div>
   </TracingBeam>
-
     </main>
 
   </>
