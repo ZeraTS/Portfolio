@@ -3,7 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import { useLanyard } from "react-use-lanyard";
 import { IconBrandSpotify } from "@tabler/icons-react";
 
-const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
+const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"], display: "swap", adjustFontFallback: false });
 
 export function Lanyard() {
     const { loading, status /*, websocket */ } = useLanyard({
