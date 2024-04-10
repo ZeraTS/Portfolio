@@ -15,7 +15,7 @@ import { Lanyard } from "./components/discord-info";
 
 
 
-const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
+const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"], display: "swap" });
 const tabs = [
   {
     title: "Data",
